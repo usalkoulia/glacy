@@ -1,0 +1,33 @@
+@import "variables";
+
+.main-footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+
+  ul {
+    display: flex;
+    padding: 0;
+
+    &.social-icons {
+      display: flex;
+      width: 200px;
+      justify-content: space-between;
+    }
+
+    &.documents {
+      display: flex;
+      flex-wrap: wrap;
+      width: 340px;
+
+      li {
+        width: 50%;
+      }
+    }
+  }
+
+  .html-academy {
+    display: flex;
+    flex-direction: column;
+  }
+}

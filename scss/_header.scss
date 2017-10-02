@@ -1,0 +1,25 @@
+@import "variables";
+
+nav {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+.main-header {
+  display: flex;
+
+  & ul:not(.catalog) {
+    padding: 0;
+    margin: 16px;
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main-block {
+    position: absolute;
+    right: 0;
+    top: 75px;
+  }
+}

@@ -1,0 +1,119 @@
+.button {
+  border-radius: 5px;
+  background-color: #849d8f; }
+  .button.button-medium {
+    font-size: 20px; }
+  .button .button-small {
+    font-size: 10px; }
+  .button:hover {
+    background-color: #d9e1dd; }
+
+nav {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between; }
+
+.main-header {
+  display: flex; }
+  .main-header ul:not(.catalog) {
+    padding: 0;
+    margin: 16px;
+    width: 350px;
+    display: flex;
+    justify-content: space-between; }
+  .main-header .main-block {
+    position: absolute;
+    right: 0;
+    top: 75px; }
+
+.shares {
+  display: flex; }
+
+.main-product ul {
+  padding: 0;
+  display: flex;
+  justify-content: space-between; }
+  .main-product ul li {
+    width: 22.2%; }
+    .main-product ul li img {
+      max-width: 100%;
+      height: auto; }
+    .main-product ul li span {
+      position: absolute; }
+
+.main-info ul {
+  display: flex;
+  flex-wrap: wrap; }
+  .main-info ul li {
+    display: flex;
+    width: 50%; }
+    .main-info ul li svg {
+      flex-shrink: 0; }
+
+.main-other {
+  display: flex;
+  justify-content: space-between; }
+  .main-other div {
+    width: 50%; }
+
+.main-map {
+  position: relative; }
+
+.address {
+  background-color: #fffffe;
+  color: #000000;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 300px; }
+
+.main-footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px; }
+  .main-footer ul {
+    display: flex;
+    padding: 0; }
+    .main-footer ul.social-icons {
+      display: flex;
+      width: 200px;
+      justify-content: space-between; }
+    .main-footer ul.documents {
+      display: flex;
+      flex-wrap: wrap;
+      width: 340px; }
+      .main-footer ul.documents li {
+        width: 50%; }
+  .main-footer .html-academy {
+    display: flex;
+    flex-direction: column; }
+
+body {
+  background-color: #849d8f;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px; }
+  body .centering {
+    position: relative;
+    margin: 0 auto;
+    padding: 2.3%;
+    width: 1200px;
+    box-sizing: border-box; }
+  body .visually-hidden {
+    display: none; }
+  body a {
+    color: inherit; }
+    body a:hover, body a:active {
+      color: #ffbc9e; }
+  body li {
+    list-style-type: none; }
+
+.catalog,
+.search-form,
+.authorization,
+.main-modal {
+  display: none; }

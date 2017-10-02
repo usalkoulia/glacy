@@ -1,0 +1,48 @@
+@import "buttons";
+@import "variables";
+@import "header";
+@import "index";
+@import "footer";
+
+body {
+  background-color: $main-color;
+  margin: 0;
+  padding: 0;
+  font-family: $main-font;
+  color: #ffffff;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+
+  .centering {
+    position: relative;
+    margin: 0 auto;
+    padding: 2.3%;
+    width: 1200px;
+    box-sizing: border-box;
+  }
+
+  .visually-hidden {
+    display: none;
+  }
+
+  a {
+    color: inherit;
+
+    &:hover,
+    &:active {
+      color: #ffbc9e;
+    }
+  }
+
+  li {
+    list-style-type: none;
+  }
+}
+
+.catalog,
+.search-form,
+.authorization,
+.main-modal {
+  display: none;
+}
