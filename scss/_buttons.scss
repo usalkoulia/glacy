@@ -1,0 +1,25 @@
+@import 'variables';
+
+.button {
+  border-radius: 5px;
+  background-color: $main-color;
+
+  &.button-medium {
+    font-size: 20px;
+  }
+
+  .button-small {
+    font-size: 10px;
+  }
+
+  &:hover {
+    background-color: lighten($main-color, 20%);
+  }
+}
+
+// =>
+
+// .button {}
+// .button.button-medium {}
+// .button .button-small {}
+// .button:hover {}

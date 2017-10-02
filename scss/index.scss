@@ -1,0 +1,11 @@
+@import 'buttons';
+@import 'variables';
+
+body {
+  background-color: $main-color;
+
+  .centering {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
