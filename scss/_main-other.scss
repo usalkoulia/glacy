@@ -1,0 +1,56 @@
+@import "variables";
+
+.main-other {
+  .main-blog {
+    color: #323232;
+    background-image: url("../img/background-strawberry.jpg");
+    background-repeat: no-repeat;
+    border-radius: $main-radius;
+    width: 560px;
+    padding: 20px;
+    box-sizing: border-box;
+    min-height: 220px;
+
+    a {
+      display: block;
+      width: 60%;
+    }
+  }
+
+  .main-spam {
+    background-color: #f8f7f4;
+    color: #5a5a5a;
+    border-radius: $main-radius;
+    width: 560px;
+    padding: 6px;
+    box-sizing: border-box;
+    background-image: url("../img/stripes.png");
+
+    .main-spam-inner {
+      background-color: #f8f7f4;
+      border-radius: $main-radius;
+      min-height: 208px;
+      padding: 30px 20px;
+      box-sizing: border-box;
+      position: relative;
+
+      p {
+        margin: 0;
+      }
+
+      form {
+        display: flex;
+        position: absolute;
+        bottom: 30px;
+        right: 20px;
+        left: 20px;
+
+        .main-input {
+          flex-grow: 1;
+          margin-right: 10px;
+        }
+      }
+
+    }
+  }
+}

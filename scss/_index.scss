@@ -26,16 +26,31 @@
 }
 
 .main-info {
+  background-image: url("../img/waffle.png");
+  color: #323232;
+  border-radius: $main-radius;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-bottom: 2.2%;
+
   ul {
     display: flex;
     flex-wrap: wrap;
+    padding: 0;
+    margin-bottom: 0;
+    justify-content: space-between;
 
     li {
       display: flex;
-      width: 50%;
+      width: 49%;
+
+      p {
+        margin-bottom: 0;
+      }
 
       svg {
         flex-shrink: 0;
+        margin-right: 8px;
       }
     }
   }
@@ -45,7 +60,7 @@
   display: flex;
   justify-content: space-between;
 
-  div {
+  > div {
     width: 50%;
   }
 }

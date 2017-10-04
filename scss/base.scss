@@ -3,6 +3,9 @@
 @import "header";
 @import "index";
 @import "footer";
+@import "shares";
+@import "main-other";
+@import "forms";
 
 body {
   background-color: $main-color;
@@ -38,7 +41,20 @@ body {
   li {
     list-style-type: none;
   }
+
+  h2 {
+    font-size: 35px;
+    line-height: 41px;
+    margin: 0;
+  }
+
+  h3 {
+    font-size: 24px;
+    line-height: 30px;
+    margin: 0;
+  }
 }
+
 
 .catalog,
 .search-form,
