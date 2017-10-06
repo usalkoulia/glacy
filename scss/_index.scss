@@ -4,27 +4,6 @@
   display: flex;
 }
 
-.main-product {
-  ul {
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-
-    li {
-      width: 22.2%;
-
-      img {
-        max-width: 100%;
-        height: auto;
-      }
-
-      span {
-        position: absolute;
-      }
-    }
-  }
-}
-
 .main-info {
   background-image: url("../img/waffle.png");
   color: #323232;

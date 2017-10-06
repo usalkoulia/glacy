@@ -1,0 +1,53 @@
+@import "variables";
+
+.products-list {
+  ul {
+    padding: 0;
+    margin: 30px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    li {
+      width: 22.2%;
+      position: relative;
+
+      img {
+        max-width: 100%;
+        height: auto;
+
+        &.hit {
+          position: absolute;
+        }
+      }
+
+      span {
+        position: absolute;
+        bottom: 70px;
+        font-family: $main-font;
+        font-size: 45px;
+        font-weight: bold;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+
+        &::after {
+          content: "/кг";
+          background-image: url("../svg-gllacy/ruble.svg");
+          height: 38px;
+          padding-left: 34px;
+          padding-top: 12px;
+          box-sizing: border-box;
+          display: inline-block;
+          background-size: contain;
+          background-position: left;
+          background-repeat: no-repeat;
+          font-size: 30px;
+        }
+      }
+
+      a {
+        text-align: center;
+        display: inline-block;
+      }
+    }
+  }
+}
