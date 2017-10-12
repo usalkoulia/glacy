@@ -5,8 +5,82 @@
   height: 44px;
   padding: 15px;
   border: 1px solid #d3d3d2;
-  border-radius: 4px;
+  border-radius: $form-border-radius;
   color: #999999;
-  font-size: 16px;
+  font-size: 14px;
   font-family: $main-font;
+  width: 100%;
 }
+
+.main-form {
+  background-color: $form-background-color;
+  padding: 20px;
+  border-radius: $form-border-radius;
+  position: absolute;
+  z-index: 1;
+}
+
+.main-form:not(.main-modal) {
+  box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.5);
+}
+
+.search-form {
+  min-width: 340px;
+  position: absolute;
+  right: 0;
+}
+
+.authorization {
+  width: 280px;
+  right: 0;
+  box-sizing: border-box;
+
+  a {
+    color: #323232;
+    font-size: 13px;
+  }
+
+  input:not([type="submit"]) {
+    margin-bottom: 20px;
+  }
+
+  .authorization-form-button-container {
+    display: flex;
+  }
+
+  .authorization-form-links-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+  }
+}
+
+.main-modal {
+  width: 440px;
+  position: relative;
+
+  input[type="text"] {
+    margin-bottom: 20px;
+    width: 265px;
+  }
+
+  p {
+    color: #323232;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  textarea {
+    height: 155px;
+    margin-bottom: 20px;
+    display: block;
+  }
+}
+
+.text-right {
+  text-align: right;
+}
+
+::-webkit-input-placeholder {color:#999999;}
+::-moz-placeholder          {color:#999999;}/* Firefox 19+ */
+:-ms-input-placeholder      {color:#999999;}

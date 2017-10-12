@@ -22,4 +22,14 @@ nav {
     right: 0;
     top: 75px;
   }
+
+  .user-menu {
+    > li > a {
+      background-color: red;
+    }
+
+    li {
+      position: relative;
+    }
+  }
 }

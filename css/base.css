@@ -32,6 +32,10 @@ nav {
     position: absolute;
     right: 0;
     top: 75px; }
+  .main-header .user-menu > li > a {
+    background-color: red; }
+  .main-header .user-menu li {
+    position: relative; }
 
 .shares {
   display: flex; }
@@ -171,8 +175,68 @@ nav {
   border: 1px solid #d3d3d2;
   border-radius: 4px;
   color: #999999;
-  font-size: 16px;
-  font-family: "Roboto", sans-serif; }
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  width: 100%; }
+
+.main-form {
+  background-color: #f8f7f4;
+  padding: 20px;
+  border-radius: 4px;
+  position: absolute;
+  z-index: 1; }
+
+.main-form:not(.main-modal) {
+  box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.5); }
+
+.search-form {
+  min-width: 340px;
+  position: absolute;
+  right: 0; }
+
+.authorization {
+  width: 280px;
+  right: 0;
+  box-sizing: border-box; }
+  .authorization a {
+    color: #323232;
+    font-size: 13px; }
+  .authorization input:not([type="submit"]) {
+    margin-bottom: 20px; }
+  .authorization .authorization-form-button-container {
+    display: flex; }
+  .authorization .authorization-form-links-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px; }
+
+.main-modal {
+  width: 440px;
+  position: relative; }
+  .main-modal input[type="text"] {
+    margin-bottom: 20px;
+    width: 265px; }
+  .main-modal p {
+    color: #323232;
+    font-size: 24px;
+    font-weight: bold; }
+  .main-modal textarea {
+    height: 155px;
+    margin-bottom: 20px;
+    display: block; }
+
+.text-right {
+  text-align: right; }
+
+::-webkit-input-placeholder {
+  color: #999999; }
+
+::-moz-placeholder {
+  color: #999999; }
+
+/* Firefox 19+ */
+:-ms-input-placeholder {
+  color: #999999; }
 
 .products-list ul {
   padding: 0;
@@ -243,8 +307,5 @@ body {
     line-height: 30px;
     margin: 0; }
 
-.catalog,
-.search-form,
-.authorization,
-.main-modal {
+.catalog {
   display: none; }
