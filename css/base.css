@@ -14,6 +14,13 @@
     font-weight: bold;
     border-radius: 22px;
     box-shadow: 1px 2px 1px 0 rgba(231, 75, 54, 0.5); }
+  .button.button-big {
+    font-size: 32px;
+    line-height: 32px;
+    padding: 20px 40px;
+    font-weight: bold;
+    border-radius: 40px;
+    box-shadow: 1px 2px 1px 0 rgba(231, 75, 54, 0.5); }
 
 nav {
   display: flex;
@@ -25,17 +32,44 @@ nav {
   .main-header ul:not(.catalog) {
     padding: 0;
     margin: 16px;
-    width: 350px;
     display: flex;
     justify-content: space-between; }
+    .main-header ul:not(.catalog) li {
+      margin-right: 25px; }
   .main-header .main-block {
     position: absolute;
-    right: 0;
-    top: 75px; }
+    right: 75px;
+    top: 100px; }
+    .main-header .main-block p {
+      font-weight: bold;
+      text-align: right;
+      margin: 0;
+      padding-bottom: 5px; }
+    .main-header .main-block p:first-child {
+      font-size: 14px; }
+    .main-header .main-block p:last-child {
+      font-size: 22px; }
   .main-header .user-menu > li > a {
-    background-color: red; }
+    text-decoration: none;
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    margin-left: 6px; }
+    .main-header .user-menu > li > a svg {
+      vertical-align: top; }
   .main-header .user-menu li {
-    position: relative; }
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.2); }
+  .main-header .user-menu li:not(.search-icon) {
+    border-radius: 30%;
+    padding: 5px 15px; }
+  .main-header .user-menu .search-icon {
+    border-radius: 50%;
+    padding: 5px; }
+    .main-header .user-menu .search-icon a {
+      margin: 0; }
+  .main-header .main-menu a {
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
 
 .shares {
   display: flex; }
@@ -77,7 +111,14 @@ nav {
   position: absolute;
   right: 0;
   top: 0;
-  width: 300px; }
+  width: 300px;
+  padding: 25px;
+  border-radius: 17px;
+  box-sizing: border-box; }
+  .address p {
+    font-size: 14px; }
+    .address p b {
+      font-size: 18px; }
 
 .main-footer {
   display: flex;
@@ -275,6 +316,21 @@ nav {
       text-align: center;
       display: inline-block; }
 
+.main-slider {
+  position: relative; }
+  .main-slider .slider-text {
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: bold;
+    position: absolute;
+    bottom: 335px;
+    padding: 0px 215px; }
+  .main-slider .button.button-big {
+    position: absolute;
+    bottom: 300px;
+    right: 40%;
+    text-decoration: none; }
+
 body {
   background-color: #849d8f;
   margin: 0;
@@ -307,5 +363,7 @@ body {
     line-height: 30px;
     margin: 0; }
 
-.catalog {
+.catalog,
+.user-menu,
+.main-form {
   display: none; }

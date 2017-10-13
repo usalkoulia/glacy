@@ -7,6 +7,7 @@
 @import "main-other";
 @import "forms";
 @import "product";
+@import "slider";
 
 body {
   background-color: $main-color;
@@ -57,7 +58,9 @@ body {
 }
 
 
-.catalog
+.catalog,
+.user-menu,
+.main-form
  {
   display: none;
 }

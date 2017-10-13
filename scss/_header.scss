@@ -12,24 +12,71 @@ nav {
   & ul:not(.catalog) {
     padding: 0;
     margin: 16px;
-    width: 350px;
     display: flex;
     justify-content: space-between;
+
+    li {
+      margin-right: 25px;
+    }
   }
 
   .main-block {
     position: absolute;
-    right: 0;
-    top: 75px;
+    right: 75px;
+    top: 100px;
+
+    p {
+      font-weight: bold;
+      text-align: right;
+      margin: 0;
+      padding-bottom: 5px;
+    }
+
+    p:first-child {
+      font-size: 14px;
+    }
+
+    p:last-child {
+      font-size: 22px;
+    }
   }
 
   .user-menu {
     > li > a {
-      background-color: red;
+      text-decoration: none;
+      font-size: 14px;
+      font-family: $main-font;
+      margin-left: 6px;
+
+        svg {
+          vertical-align: top;
+      }
     }
 
     li {
       position: relative;
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    li:not(.search-icon) {
+      border-radius: 30%;
+      padding: 5px 15px;
+    }
+
+    .search-icon {
+      border-radius: 50%;
+      padding: 5px;
+
+      a {
+        margin: 0;
+      }
+    }
+  }
+
+  .main-menu {
+    a {
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     }
   }
 }
