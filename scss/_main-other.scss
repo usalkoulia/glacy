@@ -1,6 +1,8 @@
 @import "variables";
 
 .main-other {
+  margin-bottom: 40px;
+  
   .main-blog {
     color: #323232;
     background-image: url("../img/background-strawberry.jpg");
@@ -10,6 +12,7 @@
     padding: 20px;
     box-sizing: border-box;
     min-height: 220px;
+    margin-right: 2.2%;
 
     a {
       display: block;

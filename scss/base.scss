@@ -10,7 +10,6 @@
 @import "slider";
 
 body {
-  background-color: $main-color;
   margin: 0;
   padding: 0;
   font-family: $main-font;
@@ -18,11 +17,28 @@ body {
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
+  background-repeat: no-repeat;
+  background-position: center top;
+
+  &.slide-1 {
+    background-color: $slide-1-color;
+    background-image: url("../img/main-icecream-1.png");
+  }
+
+  &.slide-2 {
+    background-color: $slide-2-color;
+    background-image: url("../img/main-icecream-2.png");
+  }
+
+  &.slide-3 {
+    background-color: $slide-3-color;
+    background-image: url("../img/main-icecream-3.png");
+  }
 
   .centering {
     position: relative;
     margin: 0 auto;
-    padding: 2.3%;
+    padding: 0 2.3%;
     width: 1200px;
     box-sizing: border-box;
   }

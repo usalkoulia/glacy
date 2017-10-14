@@ -6,7 +6,8 @@
   background: -webkit-linear-gradient(top, #f26843 0%, #e74b36 100%);
   background: linear-gradient(to bottom, #f26843 0%, #e74b36 100%);
   font-family: "Roboto", sans-serif;
-  border: none; }
+  border: none;
+  text-decoration: none; }
   .button.button-medium {
     font-size: 18px;
     line-height: 18px;
@@ -26,20 +27,28 @@ nav {
   display: flex;
   flex-grow: 1;
   justify-content: space-between; }
+  nav ul > li {
+    margin-right: 10px; }
+    nav ul > li:last-child {
+      margin-right: 0; }
+    nav ul > li:not(.search-icon) {
+      border-radius: 17px;
+      padding: 5px 15px; }
 
 .main-header {
-  display: flex; }
+  display: flex;
+  padding: 10px 0;
+  position: relative; }
   .main-header ul:not(.catalog) {
     padding: 0;
     margin: 16px;
+    margin-right: 0;
     display: flex;
     justify-content: space-between; }
-    .main-header ul:not(.catalog) li {
-      margin-right: 25px; }
   .main-header .main-block {
     position: absolute;
-    right: 75px;
-    top: 100px; }
+    right: 0;
+    top: 70px; }
     .main-header .main-block p {
       font-weight: bold;
       text-align: right;
@@ -53,20 +62,23 @@ nav {
     text-decoration: none;
     font-size: 14px;
     font-family: "Roboto", sans-serif;
-    margin-left: 6px; }
+    display: flex;
+    align-items: center; }
     .main-header .user-menu > li > a svg {
-      vertical-align: top; }
+      margin-right: 5px; }
   .main-header .user-menu li {
     position: relative;
     background-color: rgba(255, 255, 255, 0.2); }
-  .main-header .user-menu li:not(.search-icon) {
-    border-radius: 30%;
-    padding: 5px 15px; }
   .main-header .user-menu .search-icon {
     border-radius: 50%;
-    padding: 5px; }
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center; }
     .main-header .user-menu .search-icon a {
       margin: 0; }
+      .main-header .user-menu .search-icon a svg {
+        margin-right: 0; }
   .main-header .main-menu a {
     text-decoration: none;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
@@ -80,7 +92,7 @@ nav {
   border-radius: 17px;
   padding: 20px;
   box-sizing: border-box;
-  margin-bottom: 2.2%; }
+  margin-bottom: 40px; }
   .main-info ul {
     display: flex;
     flex-wrap: wrap;
@@ -103,7 +115,10 @@ nav {
     width: 50%; }
 
 .main-map {
-  position: relative; }
+  position: relative;
+  margin-bottom: 15px; }
+  .main-map iframe {
+    display: block; }
 
 .address {
   background-color: #fffffe;
@@ -169,45 +184,47 @@ nav {
     .shares .shares-item.shares-two {
       background-image: url("../img/background-chocolate.jpg"); }
 
-.main-other .main-blog {
-  color: #323232;
-  background-image: url("../img/background-strawberry.jpg");
-  background-repeat: no-repeat;
-  border-radius: 17px;
-  width: 560px;
-  padding: 20px;
-  box-sizing: border-box;
-  min-height: 220px; }
-  .main-other .main-blog a {
-    display: block;
-    width: 60%; }
-
-.main-other .main-spam {
-  background-color: #f8f7f4;
-  color: #5a5a5a;
-  border-radius: 17px;
-  width: 560px;
-  padding: 6px;
-  box-sizing: border-box;
-  background-image: url("../img/stripes.png"); }
-  .main-other .main-spam .main-spam-inner {
-    background-color: #f8f7f4;
+.main-other {
+  margin-bottom: 40px; }
+  .main-other .main-blog {
+    color: #323232;
+    background-image: url("../img/background-strawberry.jpg");
+    background-repeat: no-repeat;
     border-radius: 17px;
-    min-height: 208px;
-    padding: 30px 20px;
+    width: 560px;
+    padding: 20px;
     box-sizing: border-box;
-    position: relative; }
-    .main-other .main-spam .main-spam-inner p {
-      margin: 0; }
-    .main-other .main-spam .main-spam-inner form {
-      display: flex;
-      position: absolute;
-      bottom: 30px;
-      right: 20px;
-      left: 20px; }
-      .main-other .main-spam .main-spam-inner form .main-input {
-        flex-grow: 1;
-        margin-right: 10px; }
+    min-height: 220px;
+    margin-right: 2.2%; }
+    .main-other .main-blog a {
+      display: block;
+      width: 60%; }
+  .main-other .main-spam {
+    background-color: #f8f7f4;
+    color: #5a5a5a;
+    border-radius: 17px;
+    width: 560px;
+    padding: 6px;
+    box-sizing: border-box;
+    background-image: url("../img/stripes.png"); }
+    .main-other .main-spam .main-spam-inner {
+      background-color: #f8f7f4;
+      border-radius: 17px;
+      min-height: 208px;
+      padding: 30px 20px;
+      box-sizing: border-box;
+      position: relative; }
+      .main-other .main-spam .main-spam-inner p {
+        margin: 0; }
+      .main-other .main-spam .main-spam-inner form {
+        display: flex;
+        position: absolute;
+        bottom: 30px;
+        right: 20px;
+        left: 20px; }
+        .main-other .main-spam .main-spam-inner form .main-input {
+          flex-grow: 1;
+          margin-right: 10px; }
 
 .main-input {
   box-sizing: border-box;
@@ -317,33 +334,46 @@ nav {
       display: inline-block; }
 
 .main-slider {
-  position: relative; }
+  position: relative;
+  height: 560px; }
   .main-slider .slider-text {
     font-size: 60px;
     line-height: 60px;
     font-weight: bold;
     position: absolute;
-    bottom: 335px;
-    padding: 0px 215px; }
-  .main-slider .button.button-big {
+    padding: 0px 215px;
+    top: 245px;
+    text-align: center; }
+  .main-slider .text-center {
+    left: 0;
+    right: 0;
     position: absolute;
-    bottom: 300px;
-    right: 40%;
-    text-decoration: none; }
+    text-align: center;
+    top: 470px; }
 
 body {
-  background-color: #849d8f;
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
   color: #ffffff;
   font-weight: normal;
   font-size: 16px;
-  line-height: 22px; }
+  line-height: 22px;
+  background-repeat: no-repeat;
+  background-position: center top; }
+  body.slide-1 {
+    background-color: #849d8f;
+    background-image: url("../img/main-icecream-1.png"); }
+  body.slide-2 {
+    background-color: #8996a6;
+    background-image: url("../img/main-icecream-2.png"); }
+  body.slide-3 {
+    background-color: #9d8b84;
+    background-image: url("../img/main-icecream-3.png"); }
   body .centering {
     position: relative;
     margin: 0 auto;
-    padding: 2.3%;
+    padding: 0 2.3%;
     width: 1200px;
     box-sizing: border-box; }
   body .visually-hidden {

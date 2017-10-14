@@ -10,7 +10,7 @@
   border-radius: $main-radius;
   padding: 20px;
   box-sizing: border-box;
-  margin-bottom: 2.2%;
+  margin-bottom: 40px;
 
   ul {
     display: flex;
@@ -46,6 +46,11 @@
 
 .main-map {
   position: relative;
+  margin-bottom: 15px;
+
+  iframe {
+    display: block;
+  }
 }
 
 .address {

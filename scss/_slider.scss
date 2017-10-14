@@ -2,20 +2,23 @@
 
 .main-slider {
   position: relative;
+  height: 560px;
 
   .slider-text {
     font-size: 60px;
     line-height: 60px;
     font-weight: bold;
     position: absolute;
-    bottom: 335px;
     padding: 0px 215px;
+    top: 245px;
+    text-align: center;
   }
 
-  .button.button-big {
+  .text-center {
+    left: 0;
+    right: 0;
     position: absolute;
-    bottom: 300px;
-    right: 40%;
-    text-decoration: none;
+    text-align: center;
+    top: 470px;
   }
 }
