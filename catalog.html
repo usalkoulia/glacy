@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/base.css">
   </head>
-  <body style="background-color: #849d8f; font-family: Roboto, sans-serif">
+  <body class="slide-1">
     <div class="centering">
       <header class="main-header">
         <img src="img/logo.png" alt="Логотип Gllacy Shop" width="154" height="64">
@@ -14,8 +14,9 @@
           <ul class="main-menu">
             <li>
               <a href="#">Каталог</a>
-              <ul>
+              <ul class="catalog">
                 <li><a href="#">Новинки</a></li>
+                <li><hr></li>
                 <li><a href="#">Сливочное</a></li>
                 <li><a href="#">Щербеты</a></li>
                 <li><a href="#">Фруктовый лед</a></li>
@@ -30,26 +31,31 @@
             </li>
           </ul>
           <ul class="user-menu">
-            <li>
-              <a href="#">Поиск
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17"><path fill="#fff" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/></svg>
+            <li class="search-icon">
+              <a href="#"><p class="visually-hidden">Поиск</p>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="20" viewBox="0 0 17 17"><path fill="#fff" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/></svg>
               </a>
-              <form class="search-form" action="index.html" method="post">
-                <input type="search" name="" placeholder="Что ищем?">
+              <form class="main-form search-form" action="index.html" method="post">
+                <input type="search" name="search" placeholder="Что ищем?" class="main-input">
               </form>
             </li>
             <li>
-              <a href="#">Вход
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19" viewBox="0 0 21 19"><g fill="#fff"><path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"/><path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/></g></svg>
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="20" viewBox="0 0 21 19"><g fill="#fff"><path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"/><path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/></g></svg>
+                Вход
               </a>
-              <div class="authorization">
+              <div class="main-form authorization">
                 <form class="authorization-form" action="index.html" method="post">
-                  <input type="email" name="email" placeholder="Электронная почта">
-                  <input type="password" name="password" placeholder="Пароль">
-                  <input type="submit" name="submit" value="Войти">
+                  <input type="email" name="email" placeholder="Электронная почта" class="main-input">
+                  <input type="password" name="password" placeholder="Пароль" class="main-input">
+                  <div class="authorization-form-button-container">
+                    <input type="submit" name="submit" value="Войти" class="button button-medium">
+                    <div class="authorization-form-links-container">
+                      <a href="#">Забыли пароль?</a>
+                      <a href="#">Новая регистрация</a>
+                    </div>
+                  </div>
                 </form>
-                <a href="#">Забыли пароль?</a>
-                <a href="#">Новая регистрация</a>
               </div>
             </li>
             <li>
@@ -142,75 +148,75 @@
           <ul>
             <li>
               <img src="img/icecream-1.png" alt="Мороженое сливочное с апельсиновым джемом и цитрусовой стружкой">
-              <span>310Р</span>
+              <span>310</span>
               <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-              <button type="button" name="button">Быстрый просмотр</button>
+              <button type="button" name="button" class="button button-medium">Быстрый просмотр</button>
             </li>
             <li>
               <img src="img/icecream-2.png" alt="Мороженое сливочно-кофейное с кусочками шоколада">
-              <span>380P</span>
+              <span>380</span>
               <a href="#">Сливочно-кофейное с кусочками шоколада</a>
-              <button type="button" name="button">Быстрый просмотр</button>
+              <button type="button" name="button" class="button button-medium">Быстрый просмотр</button>
             </li>
             <li>
               <img src="img/icecream-3.png" alt="Мороженое сливочно-клубничное с присыпкой из белого шоколада">
-              <span>355P</span>
+              <span>355</span>
               <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
-              <button type="button" name="button">Быстрый просмотр</button>
+              <button type="button" name="button" class="button button-medium">Быстрый просмотр</button>
             </li>
             <li>
               <img src="img/icecream-4.png" alt="Мороженое сливочное крем-брюле с карамельной подливкой">
-              <span>415P</span>
+              <span>415</span>
               <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
-              <button type="button" name="button">Быстрый просмотр</button>
+              <button type="button" name="button" class="button button-medium">Быстрый просмотр</button>
             </li>
             <li>
               <img src="img/icecream-5.png" alt="Мороженое сливочное с брусничным джемом">
-              <span>325P</span>
+              <span>325</span>
               <a href="#">Сливочное с брусничным джемом</a>
-              <button type="button" name="button">Быстрый просмотр</button>
+              <button type="button" name="button" class="button button-medium">Быстрый просмотр</button>
             </li>
             <li>
               <img src="img/icecream-6.png" alt="Мороженое сливочно-черничное с цельными ягодами черники ">
-              <span>410P</span>
+              <span>410</span>
               <a href="#">Сливочно-черничное с цельными ягодами черники </a>
-              <button type="button" name="button">Быстрый просмотр</button>
+              <button type="button" name="button" class="button button-medium">Быстрый просмотр</button>
             </li>
             <li>
               <img src="img/icecream-7.png" alt="Мороженое сливочно-лимонное с карамельной присыпкой">
-              <span>375P</span>
+              <span>375</span>
               <a href="#">Сливочно-лимонное с карамельной присыпкой</a>
-              <button type="button" name="button">Быстрый просмотр</button>
+              <button type="button" name="button" class="button button-medium">Быстрый просмотр</button>
             </li>
             <li>
               <img src="img/icecream-8.png" alt="Мороженое сливочное с шоколадной стружкой">
-              <span>320P</span>
+              <span>320</span>
               <a href="#">Сливочное с шоколадной стружкой</a>
-              <button type="button" name="button">Быстрый просмотр</button>
+              <button type="button" name="button" class="button button-medium">Быстрый просмотр</button>
             </li>
             <li>
               <img src="img/icecream-9.png" alt="Мороженое сливочно-ванильное с кусочками шоколада">
-              <span>440P</span>
+              <span>440</span>
               <a href="#">Сливочно-ванильное с кусочками шоколада</a>
-              <button type="button" name="button">Быстрый просмотр</button>
+              <button type="button" name="button" class="button button-medium">Быстрый просмотр</button>
             </li>
             <li>
               <img src="img/icecream-10.png" alt="Мороженое сливочноe с ментоловым сиропом">
-              <span>435P</span>
+              <span>435</span>
               <a href="#">Сливочноe с ментоловым сиропом</a>
-              <button type="button" name="button">Быстрый просмотр</button>
+              <button type="button" name="button" class="button button-medium">Быстрый просмотр</button>
             </li>
             <li>
               <img src="img/icecream-11.png" alt="Мороженое сливочное с кусочками черного шоколада">
-              <span>355P</span>
+              <span>355</span>
               <a href="#">Сливочное с кусочками черного шоколада</a>
-              <button type="button" name="button">Быстрый просмотр</button>
+              <button type="button" name="button" class="button button-medium">Быстрый просмотр</button>
             </li>
             <li>
               <img src="img/icecream-12.png" alt="Мороженое сливочное с мятным сиропом">
-              <span>420P</span>
+              <span>420</span>
               <a href="#">Сливочное с мятным сиропом</a>
-              <button type="button" name="button">Быстрый просмотр</button>
+              <button type="button" name="button" class="button button-medium">Быстрый просмотр</button>
             </li>
           </ul>
           <ul class="pagination">

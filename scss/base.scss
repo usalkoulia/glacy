@@ -49,11 +49,6 @@ body {
 
   a {
     color: inherit;
-
-    &:hover,
-    &:active {
-      color: #ffbc9e;
-    }
   }
 
   li {
@@ -74,9 +69,11 @@ body {
 }
 
 
-.catalog,
+.basket,
 .user-menu,
-.main-form
+.main-form,
+.catalog,
+.main-modal
  {
   display: none;
 }

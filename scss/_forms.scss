@@ -38,6 +38,11 @@
   a {
     color: #323232;
     font-size: 13px;
+
+    &:hover,
+    &:active {
+      color: #e84d37;
+    }
   }
 
   input:not([type="submit"]) {

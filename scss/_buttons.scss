@@ -9,22 +9,37 @@
   font-family: $main-font;
   border: none;
   text-decoration: none;
+  box-shadow: 1px 2px 1px 0 rgba(231, 75, 54, .5);
+  font-weight: bold;
+  cursor: pointer;
+
+  &:hover {
+    background: #f58669;
+    background: -moz-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
+    background: -webkit-linear-gradient(top, #f58669 0%,#ec6f5e 100%);
+    background: linear-gradient(to bottom, #f58669 0%,#ec6f5e 100%);
+    box-shadow: 1px 2px 1px 0 rgba(172, 16, 0, .8);
+  }
+
+  &:active {
+    background: #f26843;
+    background: -moz-linear-gradient(top, #e74b36 0%, #f26843 100%);
+    background: -webkit-linear-gradient(top, #e74b36 0%,#f26843 100%);
+    background: linear-gradient(to bottom, #e74b36 0%,#f26843 100%);
+    box-shadow: inset 1px 2px 1px 0 rgba(172, 16, 0, .8);
+  }
 
   &.button-medium {
     font-size: 18px;
     line-height: 18px;
     padding: 13px 24px;
-    font-weight: bold;
     border-radius: 22px;
-    box-shadow: 1px 2px 1px 0 rgba(231, 75, 54, .5);
   }
 
   &.button-big {
     font-size: 32px;
     line-height: 32px;
     padding: 20px 40px;
-    font-weight: bold;
     border-radius: 40px;
-    box-shadow: 1px 2px 1px 0 rgba(231, 75, 54, .5);
   }
 }
