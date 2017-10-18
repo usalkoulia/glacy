@@ -27,8 +27,28 @@
         border-radius: 50%;
         display: inline-block;
 
+        &:hover {
+          svg {
+            g {
+              fill: rgba(255, 255, 255, 1);
+            }
+          }
+        }
+
+        &:active {
+          svg {
+            g {
+              fill: rgba(255, 255, 255, 0.5);
+            }
+          }
+        }
+
         svg {
           vertical-align: top;
+
+          g {
+            fill: rgba(255, 255, 255, 0.75);
+          }
         }
       }
     }

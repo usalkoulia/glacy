@@ -1,0 +1,34 @@
+@import "variables";
+
+.sorting-container-1,
+.sorting-container-2 {
+  display: flex;
+  align-items: flex-end;
+
+  fieldset {
+    border: none;
+
+    .sorting-fields {
+      background-color: rgba(255, 255, 255, 0.3);
+    }
+  }
+}
+
+.svg-checkbox {
+  width: 27px;
+  height: 23px;
+  background-image: url("../svg-gllacy/checkbox-on.svg");
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.button-apply {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 2px solid #ffffff;
+  border-radius: $main-radius;
+  padding: 5px 15px;
+  width: 145px;
+  height: 37px;
+}

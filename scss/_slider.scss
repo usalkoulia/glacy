@@ -21,4 +21,28 @@
     text-align: center;
     top: 470px;
   }
+
+  .slide-buttons {
+    position: absolute;
+    left: 0;
+    bottom: 60px;
+
+    .button-slide {
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background-color: transparent;
+      border: 2px solid #ffffff;
+      margin-right: 6px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.5);
+      }
+
+      &.active {
+        background-color: #ffffff;
+      }
+    }
+  }
 }

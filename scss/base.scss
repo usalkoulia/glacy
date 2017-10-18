@@ -8,6 +8,7 @@
 @import "forms";
 @import "product";
 @import "slider";
+@import "sorting";
 
 body {
   margin: 0;
@@ -19,6 +20,10 @@ body {
   line-height: 22px;
   background-repeat: no-repeat;
   background-position: center top;
+
+  &.catalog-color {
+    background-color: $slide-1-color;
+  }
 
   &.slide-1 {
     background-color: $slide-1-color;

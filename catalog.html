@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/base.css">
   </head>
-  <body class="slide-1">
+  <body class="catalog-color">
     <div class="centering">
       <header class="main-header">
         <img src="img/logo.png" alt="Логотип Gllacy Shop" width="154" height="64">
@@ -59,8 +59,9 @@
               </div>
             </li>
             <li>
-              <a href="#">Корзина
+              <a href="#">
                 <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20"><g fill="#FFF"><path d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"/><circle cx="6.984" cy="18" r="2"/><circle cx="15.984" cy="18" r="2"/></g></svg>
+                Корзина
               </a>
               <div class="basket">
                 <table>
@@ -92,58 +93,65 @@
         </nav>
       </header>
       <main>
-        <ul class="breadcrumbs">
+        <ol class="breadcrumbs">
           <li><a href="index.html">Главная</a></li>
           <li><a href="#">Каталог</a></li>
-          <li><a href="#">Сливочное</a></li>
-        </ul>
+          <li class="active-page"><a href="#">Сливочное</a></li>
+        </ol>
         <h1>Сливочное мороженое</h1>
         <form class="sorting-form" action="index.html" method="post">
-          <fieldset>
-            <legend>Сортировка:</legend>
-            <select class="sorting-iceacream" name="sorting">
-              <option value="popular">по популярности</option>
-              <option value="inexpensive">сначала недорогие</option>
-              <option value="expensive">сначала дорогие</option>
-              <option value="fat">по жирности</option>
-            </select>
-          </fieldset>
-          <fieldset>
-            <legend>Цена: 100 руб. - 500 руб.</legend>
-            <div class="form-range">
-              <div class="range-scale">
-                <div class="range-bar"></div>
+          <div class="sorting-container-1">
+            <fieldset>
+              <legend>Сортировка:</legend>
+              <select class="sorting-iceacream" name="sorting">
+                <option value="popular">по популярности</option>
+                <option value="inexpensive">сначала недорогие</option>
+                <option value="expensive">сначала дорогие</option>
+                <option value="fat">по жирности</option>
+              </select>
+            </fieldset>
+            <fieldset>
+              <legend>Цена: 100 руб. - 500 руб.</legend>
+              <div class="form-range">
+                <div class="range-scale">
+                  <div class="range-bar"></div>
+                </div>
+                <div class="range-toggle range-toggle-min"><span class="visually-hidden">Цена от</span></div>
+                <div class="range-toggle range-toggle-max"><span class="visually-hidden">Цена до</span></div>
               </div>
-              <div class="range-toggle range-toggle-min"><span class="visually-hidden">Цена от</span></div>
-              <div class="range-toggle range-toggle-max"><span class="visually-hidden">Цена до</span></div>
-            </div>
-          </fieldset>
-          <fieldset>
-            <legend>Жирность:</legend>
-            <input type="radio" name="fat" value="0" id="0">
-            <label for="0">0%</label>
-            <input type="radio" name="fat" value="10" id="10" checked>
-            <label for="10">до 10%</label>
-            <input type="radio" name="fat" value="30" id="30">
-            <label for="30">до 30%</label>
-            <input type="radio" name="fat" value="up30" id="up30">
-            <label for="up30">выше 30%</label>
-          </fieldset>
+            </fieldset>
+            <fieldset>
+              <legend>Жирность:</legend>
+              <input type="radio" name="fat" value="0" id="0">
+              <label for="0">0%</label>
+              <input type="radio" name="fat" value="10" id="10" checked>
+              <label for="10">до 10%</label>
+              <input type="radio" name="fat" value="30" id="30">
+              <label for="30">до 30%</label>
+              <input type="radio" name="fat" value="up30" id="up30">
+              <label for="up30">выше 30%</label>
+            </fieldset>
+          </div>
+          <div class="sorting-container-2">
           <fieldset>
             <legend>Наполнители:</legend>
-            <input type="checkbox" name="choco" value="choco" id="choco" checked>
-            <label for="choco">шоколадные</label>
-            <input type="checkbox" name="sugar" value="sugar" id="sugar" checked>
-            <label for="sugar">сахарные присыпки</label>
-            <input type="checkbox" name="fruit" value="fruit" id="fruit">
-            <label for="fruit">фрукты</label>
-            <input type="checkbox" name="syrup" value="syrup" id="syrup">
-            <label for="syrup">сиропы</label>
-            <input type="checkbox" name="jam" value="jam" id="jam">
-            <label for="jam">джемы</label>
+            <div class="sorting-fields">
+              <label for="choco"><input type="checkbox" name="choco" value="choco" id="choco" class="visually-hidden" checked>
+              <span class="svg-checkbox"></span>
+              шоколадные</label>
+              <input type="checkbox" name="sugar" value="sugar" id="sugar" checked>
+              <label for="sugar">сахарные присыпки</label>
+              <input type="checkbox" name="fruit" value="fruit" id="fruit">
+              <label for="fruit">фрукты</label>
+              <input type="checkbox" name="syrup" value="syrup" id="syrup">
+              <label for="syrup">сиропы</label>
+              <input type="checkbox" name="jam" value="jam" id="jam">
+              <label for="jam">джемы</label>
+            </div>
           </fieldset>
-          <input type="submit" name="" value="Применить">
+          <input type="submit" name="apply" class="button-apply" value="Применить">
         </form>
+      </div>
         <section class="products-list">
           <ul>
             <li>

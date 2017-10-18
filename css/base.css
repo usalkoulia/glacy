@@ -193,9 +193,29 @@ nav {
   border-radius: 17px;
   box-sizing: border-box; }
   .address p {
-    font-size: 14px; }
+    font-size: 14px;
+    margin-top: 0; }
     .address p b {
       font-size: 18px; }
+
+.breadcrumbs {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  font-size: 14px; }
+  .breadcrumbs a {
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
+  .breadcrumbs li + li:before {
+    content: "»";
+    padding: 8px; }
+  .breadcrumbs .active-page a {
+    pointer-events: none;
+    border-bottom: none; }
+
+.pagination {
+  width: 200px;
+  display: flex; }
 
 .main-footer {
   display: flex;
@@ -215,8 +235,14 @@ nav {
         border: 3px solid rgba(255, 255, 255, 0.5);
         border-radius: 50%;
         display: inline-block; }
+        .main-footer ul.social-icons a:hover svg g {
+          fill: white; }
+        .main-footer ul.social-icons a:active svg g {
+          fill: rgba(255, 255, 255, 0.5); }
         .main-footer ul.social-icons a svg {
           vertical-align: top; }
+          .main-footer ul.social-icons a svg g {
+            fill: rgba(255, 255, 255, 0.75); }
     .main-footer ul.documents {
       display: flex;
       flex-wrap: wrap;
@@ -417,6 +443,50 @@ nav {
     position: absolute;
     text-align: center;
     top: 470px; }
+  .main-slider .slide-buttons {
+    position: absolute;
+    left: 0;
+    bottom: 60px; }
+    .main-slider .slide-buttons .button-slide {
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background-color: transparent;
+      border: 2px solid #ffffff;
+      margin-right: 6px;
+      cursor: pointer; }
+      .main-slider .slide-buttons .button-slide:hover {
+        background-color: rgba(255, 255, 255, 0.5); }
+      .main-slider .slide-buttons .button-slide.active {
+        background-color: #ffffff; }
+
+.sorting-container-1,
+.sorting-container-2 {
+  display: flex;
+  align-items: flex-end; }
+  .sorting-container-1 fieldset,
+  .sorting-container-2 fieldset {
+    border: none; }
+    .sorting-container-1 fieldset .sorting-fields,
+    .sorting-container-2 fieldset .sorting-fields {
+      background-color: rgba(255, 255, 255, 0.3); }
+
+.svg-checkbox {
+  width: 27px;
+  height: 23px;
+  background-image: url("../svg-gllacy/checkbox-on.svg");
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin-right: 5px; }
+
+.button-apply {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 2px solid #ffffff;
+  border-radius: 17px;
+  padding: 5px 15px;
+  width: 145px;
+  height: 37px; }
 
 body {
   margin: 0;
@@ -428,6 +498,8 @@ body {
   line-height: 22px;
   background-repeat: no-repeat;
   background-position: center top; }
+  body.catalog-color {
+    background-color: #849d8f; }
   body.slide-1 {
     background-color: #849d8f;
     background-image: url("../img/main-icecream-1.png"); }
