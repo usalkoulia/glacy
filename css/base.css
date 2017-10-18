@@ -186,7 +186,7 @@ nav {
   background-color: #fffffe;
   color: #000000;
   position: absolute;
-  right: 30px;
+  right: 2.2%;
   bottom: 92px;
   width: 300px;
   padding: 25px;
@@ -434,7 +434,7 @@ nav {
     line-height: 60px;
     font-weight: bold;
     position: absolute;
-    padding: 0px 215px;
+    padding: 0px 115px;
     top: 245px;
     text-align: center; }
   .main-slider .text-center {
@@ -513,7 +513,8 @@ body {
     position: relative;
     margin: 0 auto;
     padding: 0 2.3%;
-    width: 1200px;
+    max-width: 1200px;
+    min-width: 900px;
     box-sizing: border-box; }
   body .visually-hidden {
     display: none; }
