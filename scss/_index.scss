@@ -97,7 +97,45 @@
 }
 
 .pagination {
-  width: 200px;
   display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 30px;
 
+  li {
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &.active-pagination {
+      background-color: #ffffff;
+      color: black;
+    }
+
+    &:hover:not(.active-pagination) {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    &.disabled {
+      color: rgba(255, 255, 255, 0.2);
+    }
+
+    a {
+    text-decoration: none;
+    }
+  }
+}
+
+.divider-line {
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.4);
+  margin-bottom: 15px;
 }
