@@ -47,6 +47,10 @@ nav {
   padding: 10px 0;
   position: relative;
 
+  .logo {
+    display: block;
+  }
+
   & ul:not(.catalog) {
     padding: 0;
     margin: 16px;

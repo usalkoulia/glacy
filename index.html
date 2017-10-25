@@ -75,28 +75,28 @@
     <main>
       <div class="centering">
         <div class="main-slider">
-          <div class="slide-1" >
+          <div class="slide-1 main-slider-slide slide-active">
             <p class="slider-text">Крем-брюле и пломбир с малиновым джемом</p>
             <div class="text-center">
               <a href="#" class="button button-big">Давайте оба!</a>
             </div>
           </div>
-          <div class="slide-2" style="display: none">
+          <div class="slide-2 main-slider-slide">
             <p class="slider-text">Шоколадный пломбир и лимонный сорбет</p>
             <div class="text-center">
               <a href="#" class="button button-big">Давайте оба!</a>
             </div>
           </div>
-          <div class="slide-3" style="display: none">
+          <div class="slide-3 main-slider-slide">
             <p class="slider-text">Пломбир с помадкой и клубничный щербет</p>
             <div class="text-center">
               <a href="#" class="button button-big">Давайте оба!</a>
             </div>
           </div>
           <div class="slide-buttons">
-            <button type="button" name="button" class="button-slide active"></button>
-            <button type="button" name="button" class="button-slide"></button>
-            <button type="button" name="button" class="button-slide"></button>
+            <button type="button" name="button" class="button-slide active" id="button-slide-1"></button>
+            <button type="button" name="button" class="button-slide" id="button-slide-2"></button>
+            <button type="button" name="button" class="button-slide" id="button-slide-3"></button>
           </div>
         </div>
         <div class="shares">
@@ -252,5 +252,7 @@
         <input type="submit" name="submit" value="Отправить" class="button button-medium">
       </div>
     </form>
+    <script type="text/javascript" src="js/main.js">
+    </script>
   </body>
 </html>

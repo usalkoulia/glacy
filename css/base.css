@@ -65,6 +65,8 @@ nav {
   display: flex;
   padding: 10px 0;
   position: relative; }
+  .main-header .logo {
+    display: block; }
   .main-header ul:not(.catalog) {
     padding: 0;
     margin: 16px;
@@ -527,6 +529,10 @@ nav {
 .main-slider {
   position: relative;
   height: 560px; }
+  .main-slider .main-slider-slide {
+    display: none; }
+    .main-slider .main-slider-slide.slide-active {
+      display: block; }
   .main-slider .slider-text {
     font-size: 60px;
     line-height: 60px;
@@ -540,7 +546,7 @@ nav {
     right: 0;
     position: absolute;
     text-align: center;
-    top: 470px; }
+    top: 450px; }
   .main-slider .slide-buttons {
     position: absolute;
     left: 0;
