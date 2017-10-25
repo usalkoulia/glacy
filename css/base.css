@@ -10,7 +10,8 @@
   text-decoration: none;
   box-shadow: 1px 2px 1px 0 rgba(231, 75, 54, 0.5);
   font-weight: bold;
-  cursor: pointer; }
+  cursor: pointer;
+  display: inline-block; }
   .button:hover {
     background: #f58669;
     background: -moz-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
@@ -150,6 +151,40 @@ nav {
         border-radius: 0; }
       .main-header .main-menu .catalog li:first-child {
         font-weight: bold; }
+
+.basket {
+  position: relative; }
+  .basket .basket-modal {
+    background-color: #f8f7f4;
+    position: absolute;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 16px;
+    color: #000000;
+    width: 530px;
+    z-index: 15;
+    padding: 20px 15px;
+    right: 0;
+    top: 36px;
+    border-radius: 4px;
+    box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.5); }
+    .basket .basket-modal td {
+      padding: 10px 0;
+      vertical-align: top; }
+    .basket .basket-modal .basket-image {
+      padding-top: 0;
+      text-align: center; }
+    .basket .basket-modal .basket-remove-button {
+      font-size: 25px; }
+    .basket .basket-modal .table-product {
+      width: 230px; }
+    .basket .basket-modal .basket-modal-price {
+      font-weight: bold;
+      font-size: 15px;
+      text-align: right;
+      margin-bottom: 15px; }
+    .basket .basket-modal .basket-modal-button-container {
+      text-align: right; }
 
 .shares {
   display: flex; }
@@ -693,7 +728,6 @@ body {
     line-height: 30px;
     margin: 0; }
 
-.basket,
 .user-menu,
 .main-form,
 .catalog,

@@ -189,3 +189,52 @@ nav {
     }
   }
 }
+
+.basket {
+  position: relative;
+
+  .basket-modal {
+    background-color: #f8f7f4;
+    position: absolute;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 16px;
+    color: #000000;
+    width: 530px;
+    z-index: 15;
+    padding: 20px 15px;
+    right: 0;
+    top: 36px;
+    border-radius: $form-border-radius;
+    box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.5);
+
+    td {
+      padding: 10px 0;
+      vertical-align: top;
+    }
+
+    .basket-image {
+      padding-top: 0;
+      text-align: center;
+    }
+
+    .basket-remove-button {
+      font-size: 25px;
+    }
+
+    .table-product {
+      width: 230px;
+    }
+
+    .basket-modal-price {
+      font-weight: bold;
+      font-size: 15px;
+      text-align: right;
+      margin-bottom: 15px;
+    }
+
+    .basket-modal-button-container {
+    text-align: right;
+    }
+  }
+}

@@ -10,7 +10,9 @@
   <body class="catalog-color">
     <div class="centering">
       <header class="main-header">
-        <img src="img/logo.png" alt="Логотип Gllacy Shop" width="154" height="64">
+        <!-- <a href="index.html"> -->
+          <img src="img/logo.png" alt="Логотип Gllacy Shop" width="154" height="64">
+        <!-- </a> -->
         <nav>
           <ul class="main-menu">
             <li class="active-menu">
@@ -59,31 +61,33 @@
                 </form>
               </div>
             </li>
-            <li>
+            <li class="basket">
               <a href="#">
                 <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20"><g fill="#FFF"><path d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"/><circle cx="6.984" cy="18" r="2"/><circle cx="15.984" cy="18" r="2"/></g></svg>
                 Корзина
               </a>
-              <div class="basket">
+              <div class="basket-modal">
                 <table>
                   <tr>
-                    <td>&times;</td>
-                    <td><img src="img/icecream-1.png" alt="" width="33" height="33"></td>
-                    <td>Пломбир с апельсиновым джемом</td>
+                    <td class="basket-remove-button">&times;</td>
+                    <td class="basket-image"><img src="img/icecream-1.png" alt="" width="33" height="33"></td>
+                    <td class="table-product">Пломбир с апельсиновым джемом</td>
                     <td>1,5 кг х 200 руб.</td>
                     <td>300 руб.</td>
                   </tr>
                   <tr>
-                    <td>&times;</td>
-                    <td><img src="img/icecream-2.png" alt="" width="33" height="33"></td>
+                    <td class="basket-remove-button">&times;</td>
+                    <td class="basket-image"><img src="img/icecream-3.png" alt="" width="33" height="33"></td>
                     <td>Клубничный пломбир с присыпкой из белого шоколада</td>
                     <td>1,5 кг х 300 руб.</td>
                     <td>450 руб.</td>
                   </tr>
                 </table>
                 <hr>
-                <span>Итого: 750 руб.</span>
-                <a href="#">Оформить заказ</a>
+                <div class="basket-modal-button-container">
+                <p class="basket-modal-price">Итого: 750 руб.</p>
+                  <a href="#" class="button button-medium">Оформить заказ</a>
+                </div>
               </div>
             </li>
           </ul>
