@@ -12,7 +12,7 @@
         <img src="img/logo.png" alt="Логотип Gllacy Shop" width="154" height="64">
         <nav>
           <ul class="main-menu">
-            <li>
+            <li id="main-menu-catalog">
               <a href="#">Каталог</a>
               <ul class="catalog">
                 <li><a href="#">Новинки</a></li>
@@ -39,7 +39,7 @@
                 <input type="search" name="search" placeholder="Что ищем?" class="main-input">
               </form>
             </li>
-            <li>
+            <li class="authorization-link">
               <a href="#">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="20" viewBox="0 0 21 19"><g fill="#fff"><path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"/><path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/></g></svg>
                 Вход
@@ -184,7 +184,7 @@
           <div class="address">
             <p>Адрес главного офиса и офлайн магазина:<b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b></p>
             <p>Для заказов по телефону: <b>8 812 450-25-25</b>(с 10 до 20 ежедневно)</p>
-            <button type="button" name="button-form" class="button button-medium">Форма обратной связи</button>
+            <button type="button" name="button-form" class="button button-medium" id="feedback-button">Форма обратной связи</button>
           </div>
         </div>
       </div>
@@ -243,15 +243,18 @@
         </div>
       </div>
     </footer>
-    <form class="main-modal main-form" action="index.html" method="post">
-      <p>Мы обязательно вам ответим!</p>
-      <input type="text" name="name" placeholder="Как вас зовут?" class="main-input">
-      <input type="text" name="email" placeholder="Ваша почта для ответа?" class="main-input">
-      <textarea placeholder="Напишите что-нибудь..." class="main-input"></textarea>
-      <div class="text-right">
-        <input type="submit" name="submit" value="Отправить" class="button button-medium">
-      </div>
-    </form>
+    <div class="feedback-modal-container">
+      <form class="feedback-modal main-form" action="index.html" method="post">
+        <p>Мы обязательно вам ответим!</p>
+        <input type="text" name="name" placeholder="Как вас зовут?" class="main-input">
+        <input type="text" name="email" placeholder="Ваша почта для ответа?" class="main-input">
+        <textarea placeholder="Напишите что-нибудь..." class="main-input"></textarea>
+        <div class="text-right">
+          <input type="submit" name="submit" value="Отправить" class="button button-medium">
+        </div>
+        <button type="button" name="button" class="feedback-modal-button">&times;</button>
+      </form>
+    </div>
     <script type="text/javascript" src="js/main.js">
     </script>
   </body>

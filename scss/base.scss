@@ -74,12 +74,20 @@ body {
   }
 }
 
-
-
 .user-menu,
-.main-form,
+.authorization,
+.search-form,
 .catalog,
-.main-modal
+.feedback-modal-container,
+.basket-modal
  {
   display: none;
+}
+
+.catalog-active,
+.search-active,
+.authorization-active,
+.feedback-active,
+.basket-active {
+  display: block;
 }

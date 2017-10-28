@@ -10,6 +10,7 @@ nav {
     font-weight: bold;
     position: relative;
 
+    &.active-modal,
     &:active,
     &:hover {
       background-color: #f7f6f3;
@@ -18,11 +19,23 @@ nav {
       border-radius: $main-radius;
       padding: 5px 15px;
 
-
       svg {
         path,
+        circle,
         g {
           fill: #000000;
+        }
+
+        .fill {
+          fill: transparent;
+        }
+      }
+    }
+
+    &.active-modal {
+      svg {
+        .fill {
+          fill: red;
         }
       }
     }
@@ -97,7 +110,8 @@ nav {
       position: relative;
       background-color: rgba(255, 255, 255, 0.2);
 
-      &:hover {
+      &:hover,
+      &.active-modal {
         background-color: #f7f6f3;
       }
     }
@@ -109,6 +123,7 @@ nav {
       display: flex;
       justify-content: center;
 
+      &.active-modal,
       &:hover {
         padding: 0;
         background-color: #f7f6f3;

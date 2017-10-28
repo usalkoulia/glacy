@@ -20,7 +20,7 @@
   z-index: 1;
 }
 
-.main-form:not(.main-modal) {
+.main-form:not(.feedback-modal) {
   box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.5);
 }
 
@@ -28,12 +28,14 @@
   min-width: 340px;
   position: absolute;
   right: 0;
+  top: 37px;
 }
 
 .authorization {
   width: 280px;
   right: 0;
   box-sizing: border-box;
+  top: 37px;
 
   a {
     color: #323232;
@@ -60,9 +62,36 @@
   }
 }
 
-.main-modal {
+.feedback-modal-container{
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.feedback-modal {
   width: 440px;
-  position: relative;
+  position: fixed;
+  left: 50%;
+  margin-left: -240px;
+  top: 50%;
+  margin-top: -230px;
+
+  .feedback-modal-button {
+    position: absolute;
+    top: 1px;
+    right: 7px;
+    background: none;
+    border: none;
+    font-size: 35px;
+    padding: 0;
+    line-height: 35px;
+    cursor: pointer;
+  }
+
 
   input[type="text"] {
     margin-bottom: 20px;
@@ -73,6 +102,7 @@
     color: #323232;
     font-size: 24px;
     font-weight: bold;
+    margin-top: 0;
   }
 
   textarea {
